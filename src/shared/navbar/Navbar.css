@@ -1,0 +1,90 @@
+nav {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 265px;
+  background-color: black;
+  overflow: hidden;
+  padding-top: 24px;
+  position: fixed;
+}
+
+.navbar .icon1,
+.navbar .icon2{
+  width: 24px;
+  height: 24px;
+}
+
+.navbar svg{
+  color: #ccc;
+}
+.logo{
+  margin-bottom: 22px;
+  padding: 0 24px;
+}
+.logo svg{
+  max-width: 131px;
+  height: 40px;
+  width: 100%;
+}
+
+.navbar .links,
+.navbar .options{
+  padding:  0 24px;
+  margin-bottom: 24px
+}
+
+.navbar .links a,
+.navbar .options a {
+  color: rgb(216, 216, 216);
+  text-decoration: none;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.navbar .links a:hover,
+.navbar .links svg:hover {
+  color: white;
+}
+
+.link .title{
+  font-weight: 700;
+  font-size:  13px;
+}
+
+.navbar .link{
+  height: 40px;
+}
+
+
+.navbar .options .icon1{
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.options svg{
+  color: rgb(56, 56, 56);
+}
+
+.options .icon2 svg{
+  color: #ccc;
+}
+
+.navbar .options .icon2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(69,10,245);
+  background: linear-gradient(135deg, rgba(69,10,245,1) 0%, rgba(196,239,217,1) 100%); 
+}
+
+
+.options .link:nth-child(2){
+  padding-bottom :8px;
+  border-bottom: .1px solid rgb(58, 58, 58);
+}

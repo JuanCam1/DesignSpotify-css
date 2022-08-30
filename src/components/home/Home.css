@@ -1,0 +1,117 @@
+.home {
+  margin-left: 265px;
+  height: auto;
+  background-color: #1c1c1c;
+  margin-bottom: 89px;
+}
+
+.home-header {
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #070707; */
+  color: white;
+  padding: 0 25px;
+}
+
+.home-account {
+  display: flex;
+  gap: 30px;
+}
+
+.home-mejorar {
+  width: 153px;
+  height: 32px;
+  display: grid;
+  place-content: center;
+  border-radius: 50px;
+  border: 1px solid #727272;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: context-menu;
+  transition: all 0.2s ease;
+}
+
+.home-mejorar:hover {
+  border: 2px solid #ffffff;
+  transform: scale(1.05);
+  background-color: #070707;
+}
+
+.home-main {
+  padding: 24px 32px 0;
+  height: 100%;
+  margin-bottom: 70px;
+}
+
+.home-main .section-home {
+  width: 100%;
+  height: auto;
+}
+
+.home-main .section-title {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.home-main .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* 15 */
+  margin-bottom: 30px;
+}
+
+.home-main .card {
+  width: 190px;
+  height: 280px;
+  background-color: #181818;
+  padding: 16px;
+  border-radius: 5px;
+}
+
+.home-main .home-img {
+  width: 157px;
+  height: 157px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.home-img img {
+  width: 100%;
+}
+
+.section-home .home-title {
+  color: white;
+  font-weight: bold;
+  height: 29px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.section-home .home-desc {
+  height: 45px;
+  font-size: 12px;
+  color: #b3b3b3;
+  line-height: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  margin-top: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  white-space: normal;
+}
+
+.home svg {
+  color: white;
+}
+
+@media screen and (min-width: 1580px) {
+  .home-main .cards {
+    gap: 25px;
+  }
+}

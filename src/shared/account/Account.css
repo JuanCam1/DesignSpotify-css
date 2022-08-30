@@ -1,0 +1,43 @@
+.account-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 32px;
+  padding: 2px;
+  width: 184px;
+  background-color: #070707;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.account-container:hover{
+  background-color: #282828;
+}
+
+.account-container p {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 13px;
+  font-weight: bold;
+  width: 110px;
+}
+
+.account-user {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #535353;
+  display: grid;
+  place-content: center;
+}
+
+
+.account-icon {
+  display: grid;
+  place-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}

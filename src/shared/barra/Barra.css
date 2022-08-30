@@ -1,0 +1,194 @@
+.barra {
+  background-color: aqua;
+  z-index: 100;
+  height: 90px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  background-color: #181818;
+  border-top: 1px solid #282828;
+  color: white;
+}
+
+.barra p {
+  margin: 0;
+}
+
+.barra-cont {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 0 16px;
+}
+
+.barra-info {
+  min-width: 331px;
+  width: 415px;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.barra-info img {
+  max-width: 56px;
+  width: 56px;
+}
+
+.barra-info .barra-title {
+  margin: 0 21px 0 14px;
+}
+
+.barra-info .barra-title p:nth-child(1) {
+  font-weight: 400;
+  border-bottom: 0.2px solid #181818;
+}
+
+.barra-info .barra-title p:nth-child(1):hover {
+  cursor: pointer;
+  border-bottom: 0.2px solid white;
+}
+
+.barra-info .barra-title p:nth-child(2) {
+  font-size: 10px;
+  color: rgb(184, 184, 184);
+  display: inline;
+  border-bottom: 0.2px solid #181818;
+}
+
+.barra-info .barra-title p:nth-child(2):hover {
+  cursor: pointer;
+  border-bottom: 0.2px solid white;
+}
+
+.container-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+}
+
+.barra-options {
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 300;
+  width: 495px;
+}
+
+.barra-options .barra-state {
+  width: 100%;
+  display: flex;
+  gap: 13px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.barra-state .container-svg:nth-child(1),
+.barra-state .container-svg:nth-child(5) {
+  color: rgb(104, 104, 104);
+}
+.barra-state .container-svg:nth-child(2),
+.barra-state .container-svg:nth-child(4) {
+  color: rgb(175, 175, 175);
+}
+
+.barra-state .container-svg:nth-child(2):hover,
+.barra-state .container-svg:nth-child(4):hover {
+  color: rgb(228, 228, 228);
+}
+
+.barra-state .container-svg:nth-child(3) {
+  background-color: white;
+  color: #181818;
+  border-radius: 50px;
+}
+
+.barra-options .barra-tiemp {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  gap: 8px;
+}
+
+.barra-options .barra-tiemp div {
+  border-radius: 5px;
+  width: 437px;
+  min-width: 437px;
+  height: 4px;
+  background-color: #5e5e5e;
+}
+
+.barra-options .barra-tiemp div::after {
+  content: '';
+  display: block;
+  width: 120px;
+  height: 4px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.barra-conf {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 408px;
+}
+
+.barra-conf .container-svg {
+  color: rgb(175, 175, 175);
+}
+
+.barra-conf .container-svg:hover {
+  color: rgb(228, 228, 228);
+}
+
+.barra-conf .vol {
+  width: 93px;
+  background-color: #5e5e5e;
+  border-radius: 5px;
+  height: 4px;
+}
+
+.barra-conf .vol::after{
+  content: '';
+  display: block;
+  width: 50px;
+  height: 4px;
+  border-radius: 5px;
+  background-color: white;
+
+}
+
+@media screen and (min-width: 1580px) {
+  .barra-info{
+    width: 450px;
+    min-width: 450px;
+  }
+
+  .barra-options{
+    width: 650px;
+    min-width: 550px;
+  }
+
+  .barra-conf{
+    width: 500px;
+    min-width: 440px;
+  }
+
+  .barra-options .barra-tiemp div {
+    width: 575px;
+  }
+}

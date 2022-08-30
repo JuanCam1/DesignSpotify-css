@@ -1,0 +1,15 @@
+
+
+.arrows-container{
+  display: flex;
+  gap: 20px;
+}
+
+.arrow{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  background-color: #121212;
+}
